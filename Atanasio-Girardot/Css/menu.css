@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+/* Encabezado de la página */
+
+header {
+    width: 100%;
+    height: 140px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.container__header {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header .escudo {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 0px 50px;
+}
+
+header .logo {
+    position: absolute;
+    left: 44%;
+    top: 0;
+    margin: 20px 0;
+}
+
+
+.escudo img {
+    width: 140px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.escudo img:hover {
+    transform: scale(1.07);
+}
+
+.logo img {
+    width: 220px;
+}
+
+.container__nav li {
+    text-align: center;
+    width: 100%;
+}
+
+.container__nav ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+.container__nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    background: #3bc759;
+    padding: 15px;
+    font-family: 'Jura';
+}
+
+.container__nav a:hover {
+    background: #116824;
+}
+
+.container__nav ul ul {
+    display: none;
+    width: 20%;
+    position: absolute;
+}
+
+.container__nav ul li:hover ul {
+    display: block;
+}
+
+i {
+    padding: 0 10px 0 0;
+}
+
+
+/* Barra de separador*/
+
+main .separador {
+    padding: 60px 0px;
+    display: flex;
+    background-color: #fff;
+}
+
+.separador img {
+    width: 100%;
+}
+
+/* Carrusel de imagenes */
+
+.banner {
+    margin-top: -60px;
+    width: 100%;
+    height: calc(70vh - 50px);
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url(../Images/Colegio2.jpg);
+    animation: banner 10s infinite linear;
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,22,40,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Jura';
+}
+
+.banner-content a {
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-family: 'Jura';
+}
+
+.banner-content a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url(../Images/colegio1.jpg);
+    }
+    25% {
+        background-image: url(../Images/colegio1.jpg);
+    }
+    26% {
+        background-image: url(../Images/Colegio2.jpg);
+    }
+    50% {
+        background-image: url(../Images/Colegio2.jpg);
+    }
+    51% {
+        background-image: url(../Images/Colegio3.jpg);
+    }
+    75% {
+        background-image: url(../Images/Colegio3.jpg);
+    }
+    76% {
+        background-image: url(../Images/Colegio2.jpg);
+    }
+    100% {
+        background-image: url(../Images/Colegio2.jpg);
+    }
+    
+}
+
+/* Apartado de noticias */
+
+.separador2 img {
+    width: 100%;
+}
+
+#noticias {
+    background-color: #fff;
+    font-family: 'Jura';
+}
+
+.blog-section {
+    width: 100%;
+}
+
+.blog-section .section-content {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .section-content .title{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 0 0 30px 0;
+}
+
+.blog-section .section-content .title p {
+    font-size: 18px;
+    color: #6a6a6a;
+    margin-top: 20px;
+}
+
+.blog-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.blog-section .section-content .cards .card{
+   width: 100%;
+   background-color: #60d479;
+   position: relative;
+}
+
+.blog-section .section-content .cards .card img {
+    width: 100%;
+    height: auto; 
+ }
+
+ .blog-section .section-content .cards .card .article {
+    padding: 15px 20px;
+ }
+
+ .blog-section .section-content .cards .card .article h4 {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #fff;
+ }
+
+ .blog-section .section-content .cards .card a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 1px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: #000;
+    margin-bottom: 20px;
+ }
+
+ .blog-section .section-content .cards .card .posted-date p {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #60d479;
+    padding: 6px 15px;
+ }
+
+ @media screen and (max-width: 992px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: 1fr;
+    }
+ }
+
+
+ /* Apartado de Matriculas */
+
+ .separador3 img {
+    width: 100%;
+ }
+ 
+ #matriculas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/Fondo_matriculas.jpg);
+    background-size: cover;
+    font-family: 'Jura';
+    height: 80vh;
+ }
+
+ .box {
+    background-color: #9fd383;
+    border-radius: 20px;
+    box-shadow: 3px 7px 8px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+ }
+
+ #matriculas img {
+    max-width: 100%;
+    width: 250px;
+ }
+
+ #matriculas h2 {
+    margin: 10px 0 0;
+    color: #494949;
+ }
+
+ #matriculas p {
+    color: #494949;
+    margin: 10px;
+ }
+
+ .consulta {
+    position: relative;
+    margin: 30px 0 20px;
+ }
+
+ .input {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.3);
+    display: block;
+    font-size: 1.1rem;
+    height: 42px;
+    padding: 12px 25px;
+    width: 100%;
+ }
+
+ .btn {
+    background-color: #3bc759;
+    border: 0;
+    border-radius: 0px 50px 50px 0px;
+    color: #fff;
+    font-size: 1.1rem;
+    height: 42px;
+    padding: 12px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+ }
+
+ .btn:hover {
+    background-color: #116824;
+ }
+
+
+ /* Apartado de Historia */
+
+ .separador4 img {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+ }
+
+ #historia {
+    background-color: #f5f5f5;
+ }
+
+.contenedor_historia {
+    width: 100%;
+    height: 695px;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.historia_de_la_institucion h1  {  
+    margin: -150px 0 0 220px ;
+    position: absolute;
+    font-size: 4rem;
+
+}
+.historia_de_la_institucion {
+    width: 830px;
+    height: 370px;
+    margin: 180px 0 0  990px;
+    padding: 20px 2rem 2rem 2rem;
+    position: absolute;
+    justify-content: center ;
+    font-family: 'Jura';
+    font-weight: 450;
+    text-align: justify;
+
+}
+
+.img_historia img {
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    margin: -650px 0 0 300px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+div.left {
+    padding:0 2rem 0 0;
+    position: absolute;
+    width: 1728px;
+    height: 200px;
+    font-family: 'Jura';
+    justify-content: center ;
+    margin:30px 0 0 -935px;
+    text-align: justify;
+}
+
+ /* Misión y Visión */
+
+ .separador5 img {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+ }
+
+ .contenedor_mv {
+    width: 100%;
+    height: 400px;
+    margin: 230px 0;
+    padding: 50px 0 0 0  ;
+    font-family: 'Jura';
+    font-weight: 550;
+    
+}
+
+.escudo1 img {
+    position: absolute;
+    width: 300px;
+    height: 260px;
+    margin: -250px 0 0 360px;
+}
+
+.bandera img {
+    position: absolute;
+    width: 300px;
+    height: 160px;
+    margin: -200px 0 0 1260px;
+}
+
+.mision   {
+    font-size: 4.5rem;
+    position: absolute;  
+    margin: -150px 0 0 800px;
+   
+}
+
+.misionyv article {
+    width: 100%;
+    padding: 20px 4rem 2rem 4rem;
+    position: absolute;
+    justify-content: center ;
+    text-align: justify;
+}
+
+.vision {
+    font-size: 4.5rem;
+    position: absolute;  
+    margin: 180px 0 0 801px;
+}
+
+.visionym  article { 
+    width: 100%;
+    margin: 330px 0 0 0;
+    padding: 20px 4rem 2rem 4rem;
+    position: absolute;
+    justify-content: center ;
+    text-align: justify; 
+}
+
+ /* Fotos Grados Colegio */
+
+ .separador6 img {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+ }
+
+ #grados {
+    border: 2px solid red;
+    width: 100%;
+    height: 400px;
+ }
+
+
+
+
+
+
+
+/* Pie de página - footer*/
+
+footer {
+    width: 100%;
+    padding: 55px 0;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.box__footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.box__footer .escudo_footer img {
+    width: 170px;
+    margin-left: 0px;
+}
+
+
+.box__footer .terminos {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 20px;
+}
+
+.box__footer h2 {
+    margin-bottom: 10px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 20px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer__convenio {
+    margin-top: 60px;
+}
+
+.footer__convenio img {
+    width: 200px;
+}
+
+.secretaria img {
+    border: 2px solid red;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+
