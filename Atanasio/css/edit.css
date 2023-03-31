@@ -1,0 +1,74 @@
+.br-logo img {
+    width: 50px;
+    margin: auto;
+  }
+
+  .br-sideleft {
+    background-color:#60d479;
+}
+
+.br-menu-item {
+  color: white;
+}
+
+.br-logo {
+  background-color: black;
+}
+
+.br-header {
+  background-color: black;
+}
+
+.br-header::before {
+  background-color: black;
+}
+ 
+.navicon-left a {
+  color: white;
+}
+
+.navicon-left a:hover{
+  color: #12B62B;
+}
+
+.br-header-right a {
+  color:#12B62B;
+}
+
+.br-header-right a:hover{
+  color: #12B62B;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-menu-header::before{
+  background-color:black;
+}
+
+.sidebar-label{
+  color:white;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: monospace;
+}
+
+.br-pageheader{
+  background-color: white;
+}
+body{
+  background-color: white;
+}
+
+.pd-25 {
+  background-color: #60d479;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus{
+  background-color: #60d479;
+}
+
+.btn-info{
+  background-color: #60d479;
+}
